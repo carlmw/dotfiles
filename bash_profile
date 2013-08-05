@@ -1,5 +1,3 @@
-source ~/.git-completion.sh
-
 function rvm_version {
   local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
   [ "$gemset" != "" ] && gemset="@$gemset"
@@ -18,31 +16,22 @@ xterm*)
         ;;
 esac
 
-#source ~/.git-aliases.sh
-
 alias ls='ls -G'
-
 alias la='ls -al'
-
 alias gst="git st"
 alias gco="git checkout"
 alias gdf="git diff"
-
-alias cuke="script/cucumber -r features/ --no-profile"
-alias spec="script/spec"
-alias ss="script/server"
-alias ssd="script/server --debug"
-alias ssc="CACHE_CLASSES=true script/server"
-
-alias gx="gitx --all"
+alias push="git push"
+alias pull="git pull"
+alias ga="git add"
+alias cuke="cucumber -r features/ --no-profile"
 alias rs="rails s"
+alias subl='open -a "Sublime Text 2" "$1"'
 
 export PATH="/usr/local/mysql/bin:/usr/local/sbin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
-
-alias subl='open -a "Sublime Text 2" "$1"'
 
 # MacPorts Installer addition on 2011-03-21_at_15:27:33: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
