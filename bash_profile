@@ -33,6 +33,8 @@ export PATH="/usr/local/mysql/bin:/usr/local/sbin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
+export EDITOR="subl -w"
+
 # MacPorts Installer addition on 2011-03-21_at_15:27:33: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
