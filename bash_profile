@@ -1,3 +1,5 @@
+source ~/.dotfiles/git-prompt.sh
+
 function rvm_version {
   local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
   [ "$gemset" != "" ] && gemset="@$gemset"
@@ -28,14 +30,9 @@ alias cuke="cucumber -r features/ --no-profile"
 alias rs="rails s"
 alias subl='open -a "Sublime Text 2" "$1"'
 
-export PATH="/usr/local/mysql/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 export EDITOR="subl -w"
-
-# MacPorts Installer addition on 2011-03-21_at_15:27:33: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
