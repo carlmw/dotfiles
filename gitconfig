@@ -35,7 +35,8 @@
     purr = pull --rebase
 [core]
     excludesfile = /Users/joe/.dotfiles/git/gitignore
+    editor = subl -w
 [github]
   user = carl359@gmail.com
 [push]
-  default = tracking
+    default = current

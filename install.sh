@@ -1,8 +1,7 @@
 curl -o ./git-prompt.sh https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
 
-# Bash
-ln -sf ~/.dotfiles/bashrc ~/.bashrc
-ln -sf ~/.dotfiles/bash_profile ~/.bash_profile
+# Zsh
+ln -sf ~/.dotfiles/zshrc ~/.zshrc
 
 # Git
 ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
